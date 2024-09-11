@@ -47,3 +47,12 @@ window.onscroll=()=>{
     ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
     ScrollReveal().reveal('.home-contact p, .about-contant', { origin: 'right' });
 
+    // typed js
+    const typed=new Typed('.multiple-text', {
+        strings: [ 'Frontend Developer', 'Web Designer', 'Youtuber'],
+        typeSpeed: 70, 
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true,
+    })
+

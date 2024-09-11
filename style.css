@@ -63,9 +63,10 @@ section{
 }
 
 .home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 50px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
 }
 .home-content h3{
     font-size: 3.2rem;
@@ -172,10 +173,9 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: rem;
 }
 .services-container .services-box{
-    flex: 1 1 ;
     background: var(--snd-bf-color);
     padding: 2rem 2rem;
     text-align: center;
@@ -200,6 +200,7 @@ span{
 .services-box p{
     font-size: 1rem;
     margin: 1rem 0 3rem;
+    
 }
 .portfolio{
     background: var(--bg-color);
@@ -284,7 +285,7 @@ span{
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--snd-bf-color);
+    background: var(--snd-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -442,5 +443,8 @@ span{
     .contact form .imput-box input {
         width: 100%;
     }
- 
+    .services-box{
+    width: 500px;
+    height: 330px;
+    }
 }
