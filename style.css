@@ -56,6 +56,9 @@ section{
     color: var(--text-color);
 
 }
+.navbar a:hover{
+border-bottom: 1px solid white;
+}
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -173,7 +176,8 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: rem;
+    gap: 1rem;
+   
 }
 .services-container .services-box{
     background: var(--snd-bf-color);
@@ -381,6 +385,10 @@ span{
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         
+    }
+    .services-box{
+        width: 330px;
+        height: 350px;
     }
     .navbar.active{
         display: none;
