@@ -67,9 +67,7 @@ border-bottom: 1px solid white;
 
 .home{
     margin-top: 50px;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
+  
 }
 .home-content h3{
     font-size: 3.2rem;
@@ -94,6 +92,7 @@ span{
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
 } 
+
 @keyframes floatImage {
     0%{
         transform: translateY(0);
@@ -149,9 +148,9 @@ span{
     gap: 2rem;
     background: var(--snd-bg-color);
 }
-.about-img img{
+/* .about-img img{
     width: 35vw;
-}
+} */
 .heading{
     text-align: center;
     font-size: 4.5rem;
@@ -197,11 +196,7 @@ span{
     border-color: var(--main-color);
     transform: scale(1.02);
 } */
-.services-box{
- 
-   
-    
-}
+
 .services-box i{
     font-size: 5rem;
     color: var(--main-color);
