@@ -13,7 +13,7 @@ let sections=document.querySelectorAll('section');
 let navLink=document.querySelectorAll('header nav a');
 
 window.onscroll=()=>{
-    sections.forEach(sec=>{
+        sections.forEach(sec=>{
         let top=window.scrollY;
         let offset=sec.offsetTop - 150;
         let height=sec.offsetHeight;
@@ -49,7 +49,7 @@ window.onscroll=()=>{
 
     // typed js
     const typed=new Typed('.multiple-text', {
-        strings: [ 'Frontend Developer', 'Web Designer', 'Youtuber'],
+        strings: [ 'Frontend Developer', 'Youtuber', 'Photographer', 'Video Editer'],
         typeSpeed: 70, 
         backSpeed: 50,
         backDelay: 1000,
