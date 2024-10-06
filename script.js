@@ -1,11 +1,16 @@
 // togle navbar icon
-let menuIcon=document.querySelector("#menu-icon");
+let menuIcon=document.querySelector(".menu-icon");
 let navbar=document.querySelector(".navbar");
 
-menuIcon.onclick=()=>{
-    menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
-}
+
+// menuIcon.onclick=()=>{
+//     menuIcon.classList.toggle('fa-xmark');
+//     navbar.classList.toggle('active');
+// }
+    menuIcon.addEventListener('click', () => {   
+     menuIcon.classList.toggle("fa-xmark");
+    navbar.classList.toggle("active");
+ });
 
 // scroll section active link
 
