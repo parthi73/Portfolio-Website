@@ -63,23 +63,20 @@ section{
 .navbar a:hover{
 border-bottom: 1px solid white;
 }
-#menu-icon{
-    font-size: 3.6rem;
-    color: var(--text-color);
-    display: none;
+.home{
+    display: flex;
+    justify-content: space-between;
+
 }
-
-/*  */
-
-
-/*  */
-
-
-
-
-
-
-/*  */
+.home-img{
+    margin-top: 200px;
+  
+}
+.home-img img{
+    border-radius: 500px; 
+    border: 2px solid #59b2f4;
+    box-shadow: 0 0 1rem var(--main-color);
+}
 
 .home{
     margin-top: 50px;
@@ -104,7 +101,7 @@ span{
     margin: 0;
     /* line-height: 1.3; */
 }
- /* .home-img img{
+ .home-img img{
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
 } 
@@ -119,7 +116,7 @@ span{
     100%{
         transform: translateY(0);
     }
-}  */
+} 
 .home-content p{
     font-size: 1.6rem;
 }
@@ -376,29 +373,16 @@ span{
     .navbar {
         display: none;
     }
-/* 
-    .navbar.active {
-        display:none;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-    } */
-  /* .home-img img{
-    width: 90vw;
-    margin-top: 4rem;
-  } */
-
- 
-  
 
   /* .about-img img{
     width: 90vw;
     margin-top: 4rem;
   } */
 
- 
+ .home-img img{
+    width: 90vw;
+    margin-top: 4rem;
+  }
   .portfolio-container{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -410,10 +394,11 @@ span{
     grid-template-columns: 1fr;
    }
 
-   /* .home-img img{
+   .home-img img{
     width: 80vw;
     margin-top: 8rem;
-   } */
+   }
+
 
    /* .about-img img{
     width: 100vw;
@@ -433,6 +418,27 @@ span{
     justify-content: center;
  }
 
+ .home-img img {
+  
+    width: 75vw; /* Further adjustment for very small screens */
+    
+  
+  }
+  .home{
+    flex-direction: column-reverse;
+    margin-top: -200px;
+    
+  }
+  .footer{
+    display: flex;
+    justify-content: flex-end;
+  }
+ .footer-text{
+   
+    width: 180px;
+    margin-right: 20px;
+ }
+}
   /* #menu-icon{
     display: block;
     cursor: pointer;
@@ -459,5 +465,5 @@ span{
   } */
 
    
-}
+
 

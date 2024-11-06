@@ -8,9 +8,9 @@
 
 function resetForm() {
     setTimeout(function () {
-        document.getElementById('form').reset();  // Clears all the input fields after submission
-    }, 1000);  // Optional delay of 1 second before clearing the form
-    return true;  // This ensures the form is still submitted
+        document.getElementById('form').reset();  
+    }, 1000);  
+    return true; 
 }
 
 
