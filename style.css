@@ -45,7 +45,7 @@ section{
     color: var(--text-color);
     font-weight: 700;
     cursor: pointer;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: "Nunito", sans-serif;
 }
 
 
