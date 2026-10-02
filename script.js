@@ -1,64 +1,16 @@
-// let menuIcon = document.getElementById("menu-icon");
-// let navbar = document.querySelector(".navbar");  
-
-// menuIcon.onclick = () => {
-//     menuIcon.classList.toggle('fa-xmark');  // Toggle between bars and X icon
-//     navbar.classList.toggle('active');  // Toggle active class to show/hide navbar
-// };
-
-function resetForm() {
-    setTimeout(function () {
-        document.getElementById('form').reset();  
-    }, 1000);  
-    return true; 
-}
-
-
-// scroll section active link
-
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        }
+(function () {
+    var w = ["Frontend Developer", "YouTuber", "Video Editor", "Photographer"], i = 0, j = 0, d = false, el = document.getElementById("type");
+    function t() {
+        var s = w[i]; j += d ? -1 : 1; el.textContent = s.slice(0, j); var delay = d ? 45 : 80;
+        if (!d && j === s.length) { d = true; delay = 1200 } else if (d && j === 0) { d = false; i = (i + 1) % w.length; delay = 300 }
+        setTimeout(t, delay)
+    }
+    t();
+    var io = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add("on"); io.unobserve(x.target) } }) }, { threshold: .12 });
+    document.querySelectorAll(".rv").forEach(function (x) { io.observe(x) });
+    document.getElementById("f").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var b = "Name: " + n.value + "\nEmail: " + e.value + "\n\n" + m.value;
+        location.href = "mailto:rajaparthipan7373@gmail.com?subject=" + encodeURIComponent(s.value || "Portfolio enquiry") + "&body=" + encodeURIComponent(b)
     });
-
-    // sticky navbar
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
-
-    // remove toggle icon and navbar when scrolling
-    // menuIcon.classList.remove('fa-xmark');
-    // navbar.classList.remove('active');
-};
-
-// scroll Reveal
-ScrollReveal({ 
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-});
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
-
-// typed.js
-const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Youtuber', 'Photographer', 'Video Editor'],
-    typeSpeed: 70, 
-    backSpeed: 50,
-    backDelay: 1000,
-    loop: true,
-});
+})();
